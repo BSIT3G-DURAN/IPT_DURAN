@@ -1,0 +1,291 @@
+
+body {
+  background-color: whitesmoke;
+}
+body, .main-con, .lop, .p-info, .hobby, .vlink, .npor {
+  transition: background-color 0.3s, color 0.4s;
+}
+
+.home-header {
+height: 55px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: rgb(232,232,232);
+z-index: 10;
+}
+
+.left-section {
+width: 400px;
+display: flex;
+align-items: center;
+font-size: 21px;
+font-family: Racing Sans One;
+}
+
+.artstation-icon {
+height: 23px;
+margin-left: 24px;
+margin-right: 12px;
+}
+
+.middle-section { 
+display: flex;
+align-items: center;
+padding-left: 20px;
+background-color: rgb(232,232,232);
+}
+
+
+.mid-h {
+margin-right: 20px;
+font-family: Roboto, sans-serif;
+font-weight: 500;
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+.mid:hover, .mid-h:hover {
+color: #f18100;
+}
+
+.mid {
+margin-right: 20px;
+font-family: Roboto, sans-serif;
+font-weight: 500;
+text-decoration: none;
+color: black;
+cursor: pointer;
+}
+
+.right-section {
+width: 120px;
+margin-right: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-shrink: 0;
+background-color: rgb(232,232,232);
+  
+}
+
+.fb-icon, .instagram-icon {
+height: 20px;
+margin-top: 0.5px;
+}
+
+/* Button/Switch */
+.button-switch {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 25px;
+  right: 10px;
+}
+
+.dmode{
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* When the checkbox is checked */
+input:checked + .slider {
+  background-color: #007bff; /* Green when toggled on */
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px); /* Moves the slider to the right */
+}
+
+
+/* content */
+
+.npor {
+  font-family: Roboto, sans-serif;
+  height: 120px;
+  width: 77%;
+  margin: 70px 0px 20px 298px;
+  border-radius: 10px;
+  position: relative;
+  background-color: whitesmoke;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+  z-index: 0;
+}
+
+.n-left {
+  padding-top: 3px;
+  padding-left: 30px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+.m-pf {
+  margin-top: 5px;
+}
+
+.main-con {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  font-family: Roboto, sans-serif;  
+}
+
+/* main left */
+.main-left {
+  background-color: white;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+
+.lop {
+  text-align: center;
+  padding: 25px;  
+}
+
+.pf {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin-bottom: 0px;  
+}
+
+.name {
+  margin-top: 10px;
+  margin-bottom: 0px;  
+}
+
+h4 {
+  margin-top: 5px;
+  margin-bottom: 0px;  
+}
+
+.sencon {
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 13px;
+  margin-bottom: 0px;   
+}
+
+.p-info {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 0px;  
+}
+
+
+
+.hob {
+  font-size: 12px;
+  display: flex;
+  gap: 15px;    
+}
+
+.hobby {
+  border: solid 1px black;
+  background-color: white;
+  padding: 8px 20px;   
+}
+
+
+
+/* Middle */
+.life, .personality, .goal {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3);
+}
+
+
+
+/* right */
+.fs-acct, .exp, .skill {
+ padding: 25px;
+ background-color: white;
+ border-radius: 10px;
+ margin-bottom: 20px;
+ box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.3); 
+}
+
+.account {
+ border-bottom: solid 1px rgb(255, 153, 0);   
+}
+
+.faceb, .gmail {
+ display: flex;
+ margin-top: 10px;
+ padding: 20px;   
+}
+
+.acct {
+ margin-bottom: 0px;   
+}
+
+.fs {
+ margin-top: 5px;   
+}
+
+.fv {
+ margin-left: 35px;
+ margin-top: 28px;   
+}
+
+.gv {
+ margin-left: 20px;
+ margin-top: 28px;   
+}
+
+.vlink {
+ text-decoration: none;
+ padding: 5px 40px;
+ font-size: 14px;
+ font-weight: 600;
+ font-family: Roboto, sans-serif;
+ color: rgb(17, 111, 253);
+ border: 1px solid rgb(255, 153, 0);
+ border-radius: 30px;   
+}

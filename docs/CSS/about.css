@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(232,232,232);
+ }
+
+ .home-header {
+   height: 55px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   background-color: rgb(232,232,232);
+   z-index: 10;
+   }
+   
+   .left-section {
+   width: 400px;
+   display: flex;
+   align-items: center;
+   font-size: 21px;
+   font-family: Racing Sans One;
+   }
+   
+   .artstation-icon {
+   height: 23px;
+   margin-left: 24px;
+   margin-right: 12px;
+   }
+   
+   .middle-section { 
+   display: flex;
+   align-items: center;
+   padding-left: 20px;
+   background-color: rgb(232,232,232);
+   }
+   
+   
+   .mid-h {
+   margin-right: 20px;
+   font-family: Roboto, sans-serif;
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   }
+   
+   .mid:hover, .mid-h:hover {
+   color: #f18100;
+   }
+   
+   .mid {
+   margin-right: 20px;
+   font-family: Roboto, sans-serif;
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+   }
+   
+   .right-section {
+   width: 120px;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-shrink: 0;
+   background-color: rgb(232,232,232);
+     
+   }
+   
+   .fb-icon, .instagram-icon {
+   height: 20px;
+   margin-top: 0.5px;
+   }
+ 
+ .artist {
+     background-color: rgb(248,248,248);
+     height: 550px;
+     width: 930px;
+     display: inline-block;
+     margin: 30px 0px 0px 210px;
+     box-shadow: 0px 8px 24px 0px
+     rgba(0,0,0,0.3);
+ }
+ 
+ .artist-stment {
+     display: inline-block;
+     width: 180px;
+     margin-left: 10px;
+     margin-top: 50px;
+     vertical-align: top;
+     border-right: 1px solid black;
+ }
+ 
+ .artist-stment h2 {
+     font-size: 50px;
+     font-weight: 700;
+     color: rgb(2, 2, 63);
+     margin: 0px 0px 0px 30px;
+     
+ }
+ 
+ .artist-stment p {
+     font-size: 18px;
+     font-weight: 900;
+     color: rgb(2, 2, 61);
+     margin: 0px 0px 10px 30px;
+     
+ }
+ 
+ .paragraph {
+    display: inline-block;
+    height: 200px;
+    width: 630px;
+    margin-top: 50px;
+    vertical-align: middle;
+ }
+     
+ .p-con p {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    line-height: 22px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    max-width: 630px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ }
+ 
+ 
+ .p-con h6 {
+    font-size: 11px;
+    font-family: Roboto, sans-serif;
+    color: rgb(2, 2, 61);
+    margin-top: 8px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+ }
+ 
+ .p-con h5 {
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    color: rgb(223, 80, 28);
+    margin-left: 10px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+ }
+ .rdmore {
+    font-size: 13px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(77, 17, 133);
+    margin-left: 10px;
+ }
