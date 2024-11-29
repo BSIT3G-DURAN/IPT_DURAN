@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>MDAS Calculator</title> -->
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        input[type="number"] {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MDAS Calculator (5 Numbers)</h1>
+
+    <div>
+        <label for="num1">Enter first number:</label>
+        <input type="number" id="num1" required>
+    </div>
+
+    <div>
+        <label for="num2">Enter second number:</label>
+        <input type="number" id="num2" required>
+    </div>
+
+    <div>
+        <label for="num3">Enter third number:</label>
+        <input type="number" id="num3" required>
+    </div>
+
+    <div>
+        <label for="num4">Enter fourth number:</label>
+        <input type="number" id="num4" required>
+    </div>
+
+    <div>
+        <label for="num5">Enter fifth number:</label>
+        <input type="number" id="num5" required>
+    </div>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result"></div>
+
+
+    <h2>Font Size Pixel</h2>
+  
+  <p id="text">Resizing</p>
+
+  <button onclick="changeFontSize('increase')">Increase Font Size</button>
+  <button onclick="changeFontSize('decrease')">Decrease Font Size</button>
+
+    <script>
+
+function calculate() {
+    // Get user inputs for numbers
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var num3 = document.getElementById("num3").value;
+    var num4 = document.getElementById("num4").value;
+    var num5 = document.getElementById("num5").value;
+
+    // Convert inputs to numbers
+    num1 = Number(num1);  // Converts string to number
+    num2 = Number(num2);
+    num3 = Number(num3);
+    num4 = Number(num4);
+    num5 = Number(num5);
+
+    // Perform the MDAS operations
+    var result = num1 * num2 / num3 + num4 - num5;
+
+    // Display the result
+    document.getElementById("result").textContent = "Result: " + result;
+}
+
+
+let currentFontSize = 16; // Initial font size in px
+
+    function changeFontSize(action) {
+      const textElement = document.getElementById('text');
+      
+      if (action === 'increase') {
+        currentFontSize += 2;
+      } else if (action === 'decrease') {
+        currentFontSize -= 2;
+      }
+
+      textElement.style.fontSize = currentFontSize + 'px';
+    }
+
+    </script>
+
+</body>
+</html>
+
+
